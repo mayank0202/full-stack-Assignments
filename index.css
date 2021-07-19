@@ -1,0 +1,150 @@
+    .container {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 50px;
+    }
+    
+    #button {
+        font-size: 15px;
+        border: 1px solid grey;
+        cursor: pointer;
+        padding: 15px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10%;
+        background-color: rgba(255, 136, 0, 0.932);
+        color: rgb(63, 17, 17);
+        font-size: large;
+        transition: all 0.8s;
+        text-align: center;
+    }
+    
+    #button:hover {
+        text-decoration: underline;
+        background-color: powderblue
+    }
+    
+    body {
+        background-image: linear-gradient(to bottom right, rgb(113, 205, 221), rgb(5, 55, 121));
+        height: 700px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    table,
+    td,
+    th {
+        align-content: center;
+        border: 0.5px solid grey;
+        border-collapse: collapse;
+        margin-left: 340px;
+        padding: 18px;
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    tr {
+        padding: auto;
+    }
+    
+    table {
+        white-space: normal;
+        text-align: center;
+        margin-left: auto;
+        width: 100%;
+        margin-right: auto;
+    }
+    
+    td {
+        background-color: lemonchiffon;
+        padding: 10px;
+    }
+    
+    #GenerateData {
+        font-size: medium;
+        text-align: center;
+    }
+    
+    #onEditing,
+    #onDeleting,
+    #save,
+    #cancel,
+    #adddata {
+        border-radius: 10%;
+        background-color: rgba(255, 136, 0, 0.932);
+        color: rgb(63, 17, 17);
+        transition: all 0.8s;
+        text-align: center;
+        border: 1px solid grey;
+        cursor: pointer;
+        padding: 3px;
+    }
+    
+    #adddata:hover {
+        text-decoration: underline;
+        background-color: powderblue
+    }
+    
+    #onEditing:hover {
+        text-decoration: underline;
+        background-color: powderblue
+    }
+    
+    #save:hover {
+        text-decoration: underline;
+        background-color: powderblue
+    }
+    
+    #cancel:hover {
+        text-decoration: underline;
+        background-color: gold
+    }
+    
+    #onDeleting:hover {
+        text-decoration: underline;
+        background-color: gold
+    }
+    
+    #list {
+        padding: 2px 3px 4px 3px;
+        width: auto;
+    }
+    
+    #datetime {
+        font-size: medium;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 5%;
+        background-color: rgba(255, 136, 0, 0.932);
+        color: rgb(63, 17, 17);
+    }
+    
+    #datetime:hover {
+        text-decoration: underline;
+        background-color: powderblue
+    }
+    
+    table th {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    th td {
+        padding: 6px;
+        width: 120px;
+        height: 50px;
+    }
+    
+    input {
+        width: 100px;
+    }
