@@ -1,0 +1,63 @@
+h1 {
+    color: rgb(2, 2, 121);
+    text-align: center;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+table {
+    white-space: normal;
+    text-align: center;
+    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    width: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 6px;
+    width: 120px;
+    height: 50px/* width: fit-content; */
+}
+
+#refreshData {
+    display: none;
+}
+
+button {
+    border-radius: 6px;
+    border-color: rgb(2, 2, 121);
+    text-align-last: right;
+    padding: 6px 16px;
+    background-color: rgb(196, 196, 196);
+    color: rgb(2, 2, 121);
+    font-weight: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.action-button {
+    width: 200px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-delete {
+    text-align: center;
+}
+
+input {
+    width: 100px;
+}

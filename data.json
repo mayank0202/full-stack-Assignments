@@ -1,0 +1,50 @@
+{
+    "Users": [{
+            "FirstName": "Mayank",
+            "MiddleName": "NN",
+            "LastName": "Sharma",
+            "email": "mayank2299@gmail.com",
+            "phoneNumber": "9873824766",
+            "Role": "Full Stack Trainee",
+            "Address": "Sector 31 Faridabad"
+
+        },
+        {
+            "FirstName": "Rohit",
+            "MiddleName": "NN",
+            "LastName": "Sharma",
+            "email": "rohit99@gmail.com",
+            "phoneNumber": "9873824766",
+            "Role": "Full Stack Trainee",
+            "Address": "Sector 1 Faridabad"
+        },
+        {
+            "FirstName": "Shubham",
+            "MiddleName": "NN",
+            "LastName": "Sharma",
+            "email": "shubham22@gmail.com",
+            "phoneNumber": "9971408105",
+            "Role": "Full Stack Trainee",
+            "Address": "Sector 35 Faridabad"
+        },
+        {
+            "FirstName": "Aman",
+            "MiddleName": "NN",
+            "LastName": "Nagpal",
+            "email": "shubham22@gmail.com",
+            "phoneNumber": "9971408105",
+            "Role": "Full Stack Trainee",
+            "Address": "Sector 35 Faridabad"
+        },
+        {
+            "FirstName": "Ekta",
+            "MiddleName": "NN",
+            "LastName": "Garg",
+            "email": "shubham22@gmail.com",
+            "phoneNumber": "9971408105",
+            "Role": "Full Stack Developer",
+            "Address": "Panipat"
+        }
+
+    ]
+}
