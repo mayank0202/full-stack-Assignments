@@ -4,12 +4,7 @@ var express = require('express'); // using express package
 var port = express();
 var router_1 = require("./router");
 var port1 = 4200; // Port1 is defined for running the local server
-// const bodyparser = require('body-parser'); 
-// port.use(bodyparser.urlencoded({
-//     extended:false
-// }));
-// port.use(bodyparser.json())
-///////////////////// break //////////////////////////////
+
 port.use(express.urlencoded());
 //The express.urlencoded() function is a built-in middleware function in Express. 
 //It parses incoming requests with urlencoded payloads and is based on body-parser.
