@@ -46,7 +46,7 @@ th {
     border: 1px solid blue;
     border-collapse: collapse;
     padding: 18px;
-    margin-left: 320px;
+    /* margin-left: 320px; */
 }
 
 td {
