@@ -1,0 +1,206 @@
+h2 {
+    font-size: 3em;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 2s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        background: linear-gradient( #c0423e, #b5d38d);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: linear-gradient( #61c49e, #448a86);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: linear-gradient( #55ecb2, #4e2780);
+        -webkit-background-clip: text;
+    }
+}
+
+body {
+    background-color: blueviolet;
+}
+
+#firstButton {
+    border: 1px solid grey;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(222, 18, 230, 0.932);
+    color: whitesmoke;
+    font-size: large;
+    transition: all 0.8s;
+    text-align: center;
+}
+
+table,
+td,
+th {
+    align-content: center;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    padding: 18px;
+    margin-left: 320px;
+}
+
+td {
+    border: 0.3px solid gray;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    background-color: #e207b3;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px;
+}
+
+.button-toolbar {
+    margin-top: 5px;
+}
+
+#addData {
+    display: none;
+    border: 1px solid blue;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+    margin-right: 400px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(122, 11, 226, 0.932);
+    color: whitesmoke;
+    font-size: large;
+    transition: all 0.8s;
+    text-align: center;
+    float: right;
+}
+
+#addData:hover {
+    text-decoration: underline;
+    background-color: rgb(46, 5, 94);
+}
+
+#firstButton:hover {
+    text-decoration: underline;
+    background-color: rgb(28, 90, 131);
+}
+
+#onDeleting {
+    background-color: rgb(250, 41, 34);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 1px;
+    cursor: pointer;
+    transition: all 0.8s;
+    width: 68px;
+}
+
+#onDeleting:hover {
+    text-decoration: underline;
+    background-color: rgb(158, 20, 170);
+}
+
+.save-button {
+    background-color: #740f0f;
+    border: none;
+    border-radius: 12%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: all 0.8s;
+    width: 60px;
+}
+
+.save-button:hover {
+    text-decoration: underline;
+    background-color: rgb(88, 12, 84);
+}
+
+#onEditing {
+    background-color: #a1238c;
+    border: none;
+    border-radius: 12%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: all 0.8s;
+    width: 60px;
+}
+
+#onEditing:hover {
+    text-decoration: underline;
+    background-color: rgb(56, 194, 236);
+}
+
+.cancel-button {
+    background-color: #4da2d3;
+    border: none;
+    border-radius: 12%;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 1px;
+    cursor: pointer;
+    transition: all 0.8s;
+    width: 68px;
+}
+
+.cancel-button:hover {
+    text-decoration: underline;
+    background-color: rgb(80, 255, 80);
+}
+
+#datetime {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    background-color: rgba(222, 18, 230, 0.932);
+    color: rgb(63, 17, 17);
+}
+
+#datetime:hover {
+    text-decoration: underline;
+    background-color: powderblue;
+    transition: all 0.8s;
+}
