@@ -1,0 +1,16 @@
+.wrapper {
+    text-align: center;
+}
+
+.load {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #0a81e2, #0751db);
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
