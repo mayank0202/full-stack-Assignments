@@ -1,0 +1,56 @@
+.container {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 150px;
+  height: 50px;
+}
+
+.bg-custom-1 {
+  background-image: linear-gradient(to right, #000000 62%, #ffffff 100%);
+}
+
+.modal-body {
+  background-color: #11151d;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #55608f;
+}
+
+#Input {
+  background-color: #7ea5ca;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* color: #fff; */
+}
+
+th {
+  text-align: left;
+}
+
+th {
+  background-color: #55608f;
+}
