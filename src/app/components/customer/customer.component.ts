@@ -103,7 +103,5 @@ export class CustomerComponent implements OnInit {
     this.showAdd = true;
     this.showUpdate = false;
   }
-  // showUser(){
-  //   this.router.navigateByUrl(`/showUserAssociatedWithCustomer`);
-  // }
+  
 }
