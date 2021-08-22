@@ -1,0 +1,35 @@
+<nav class="navbar navbar-light bg-custom-1">
+  <div class="container-fluid">
+    <h1 style="color: white">Role Table</h1>
+  </div>
+</nav>
+<div>
+  <button (click)="showCustomer()" type="button" class="btn btn-success mx-2">
+    Move To Customer
+  </button>
+  <button (click)="showDashboard()" type="button" class="btn btn-success">
+    Back To Dashboard
+  </button>
+</div>
+
+<table class="table table-bordered border-light mt-3" id="container">
+  <thead>
+    <tr>
+      <th
+        scope="col"
+        style="color: antiquewhite; font-size: large"
+        *ngFor="let row of userData[0] | keyvalue: order"
+      >
+        {{ row.key }}
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr style="color: whitesmoke" *ngFor="let row of userData">
+      <td *ngFor="let data of row | keyvalue: order">
+        {{ data.value }}
+      </td>
+    </tr>
+  </tbody>
+</table>
