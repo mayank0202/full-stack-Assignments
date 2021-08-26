@@ -1,0 +1,17 @@
+  <tr>
+            <!-- <td *ngFor="let data of row | keyvalue">{{data.value}}</td> -->
+            <!-- <td>{{row.value}}</td> -->
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.middleName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.Role}}</td>
+            <td>{{user.Address}}</td>
+
+            <td>
+                <button class="btn btn-success">Edit</button>
+                <button class="btn btn-danger mx-2">Delete</button>
+            </td>
+        </tr>

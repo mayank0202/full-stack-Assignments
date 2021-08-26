@@ -1,0 +1,83 @@
+<nav class="navbar navbar-light bg-custom-1">
+  <div class="container-fluid">
+      <h1 style="color: white;">Customer Table</h1>
+      <div class="d-flex">
+          <button  type="button"(click)="clickAddCustomer();" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger">Add Customer</button>
+      </div>
+  </div>
+</nav>
+<div>
+  <button (click)="showRole();" type="button"  class="btn btn-success mx-2">Move To Roles</button>
+  <button (click)="showDashboard();" type="button"  class="btn btn-success ">Back To Dashboard</button>
+
+</div>
+
+<table class="table table-bordered border-dark mt-3" id="container">
+  <thead>
+      <tr>
+          <th scope="col" style="color:black; font-size: large;" *ngFor="let row of customerData[0] | keyvalue:order">{{row.key}}</th>
+
+          <th scope="col">Display</th>
+          <th scope="col">Actions</th>
+      </tr>
+  </thead>
+
+  <tbody>
+      <tr style="color:whitesmoke;" *ngFor="let row of customerData">
+
+          <td *ngFor="let data of row | keyvalue:order" >
+              {{data.value}}
+          </td>
+          
+
+
+          <td>
+            <button [routerLink]="['/showUserAssociatedWithCustomer',row.id]" class="btn btn-primary mx-2">Show user</button>
+          </td>
+          <td> <button  type="button"(click)="editData(row)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Edit</button>
+              <button (click)="deleteCustomer(row)" class="btn btn-danger mx-2">Delete</button>
+          </td>
+
+
+      </tr>
+
+  </tbody>
+</table>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header border-dark">
+              <h5 class="modal-title text-light" id="exampleModalLabel">Customer Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label text-light">id</label>
+                  <input type="number" formControlName="id" class="form-control" id="Input">
+              </div>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-light">Name</label>
+                      <input type="text" formControlName="name" class="form-control" id="Input">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-light">Website</label>
+                      <input type="text" formControlName="website" class="form-control" id="Input">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-light">Address</label>
+                      <input type="text" formControlName="address" class="form-control" id="Input">
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer border-dark">
+              <button type="button" id="cancel" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button"*ngIf="showAdd"(click)="createCustomer();"  class="btn btn-success">Add</button>
+              <button type="button" *ngIf="showUpdate" (click)="updateCustomer();"   class="btn btn-success">update</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
