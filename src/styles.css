@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: linear-gradient(-45deg, #0c4e85, #0d121b);
+    
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+}
