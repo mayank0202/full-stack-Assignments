@@ -4,15 +4,18 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators'
 import { customerModel } from "../components/customer/customer.model";
 import { Router } from '@angular/router';
+
 import { throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+
   fetchData = new EventEmitter<any[]>();
   fetchCustomer = new EventEmitter<customerModel>();
   jwtToken = new EventEmitter<string>();
   createEntity = new EventEmitter<boolean>();
+
 
   private data: any[] = []
 
@@ -20,12 +23,15 @@ export class ApiService {
 
 
   loginUser(credentials: { email: string, password: string }) {
+
     console.log("cred", credentials);
     this.http.post("http://localhost:3000/users/login", credentials).subscribe((data) => {
       console.log("data", data);
       this.jwtToken.emit((data as any).token);
+
       localStorage.setItem('access_token', data.toString());
           return true;
+
 
     })
   }

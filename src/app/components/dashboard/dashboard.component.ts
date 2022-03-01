@@ -68,8 +68,10 @@ export class DashboardComponent implements OnInit {
       closeform?.click();
       this.formValue.reset();
       this.getData();
+
     },err=>{
       alert("something went wrong"+err);
+
     })
 
   }
@@ -80,6 +82,8 @@ export class DashboardComponent implements OnInit {
       alert("employee data deleted")
       console.log(res);
       this.getData();
+
+
     })
 
   }
@@ -119,6 +123,7 @@ export class DashboardComponent implements OnInit {
       closeform?.click();
       this.formValue.reset();
       this.getData();
+
     })
 
   }

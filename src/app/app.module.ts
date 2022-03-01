@@ -4,7 +4,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from "@angular/common";
+
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoadComponent } from './components/load/load.component';
@@ -16,9 +18,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { CookieModule } from 'ngx-cookie';
 import { JwtModule } from '@auth0/angular-jwt';
 
+import { CanActivate, Router } from '@angular/router';
+import {AlwaysAuthGuard} from './app-routing.module'
+
 // export function tokenGetter() {
 //   return localStorage.getItem('access_token');
 // }
+
 
 @NgModule({
   declarations: [
@@ -42,7 +48,9 @@ import { JwtModule } from '@auth0/angular-jwt';
 
 
   ],
+
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
