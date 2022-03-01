@@ -4,7 +4,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from "@angular/common";
-import { AppRoutingModule, OnlyLoggedinGuardUsers } from './app-routing.module';
+
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoadComponent } from './components/load/load.component';
@@ -15,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CookieModule } from 'ngx-cookie';
 import { JwtModule } from '@auth0/angular-jwt';
+
 import { CanActivate, Router } from '@angular/router';
 import {AlwaysAuthGuard} from './app-routing.module'
 
@@ -45,7 +48,9 @@ import {AlwaysAuthGuard} from './app-routing.module'
 
 
   ],
-  providers: [AlwaysAuthGuard,ApiService,OnlyLoggedinGuardUsers],
+
+  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

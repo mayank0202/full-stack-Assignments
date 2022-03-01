@@ -23,6 +23,3 @@ describe('RoleComponent', () => {
     expect(component).toBeTruthy();
   });
 
-});
-
-

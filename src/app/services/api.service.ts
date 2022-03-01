@@ -5,13 +5,11 @@ import { map } from 'rxjs/operators'
 import { customerModel } from "../components/customer/customer.model";
 import { Router } from '@angular/router';
 
+import { throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-
-
 export class ApiService {
-  isLoggedin: boolean= false;
 
   fetchData = new EventEmitter<any[]>();
   fetchCustomer = new EventEmitter<customerModel>();
@@ -30,13 +28,11 @@ export class ApiService {
     this.http.post("http://localhost:3000/users/login", credentials).subscribe((data) => {
       console.log("data", data);
       this.jwtToken.emit((data as any).token);
-      this.isLoggedin = true;
 
       localStorage.setItem('access_token', data.toString());
           return true;
 
-    },(error)=>{
-      console.log(error.message)
+
     })
   }
   getRole() {
