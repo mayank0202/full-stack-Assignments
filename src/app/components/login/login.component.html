@@ -1,0 +1,67 @@
+<!--
+<div class="row">
+  <div class="col-md-6 mx-auto p-0">
+      <div class="card">
+          <div class="login-box">
+              <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+                  <div class="login-space">
+                      <div class="login">
+                          <div class="group"> <label for="user" class="label">email</label> <input id="user" [(ngModel)]="credentials.email" type="text" class="input" placeholder="Enter your email"> </div>
+                          <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" [(ngModel)]="credentials.password" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                          <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                          <div class="group"> <input type="submit" (click)="onSubmit()" class="button" value="Sign In"> </div>
+
+                          <div class="hr"></div>
+
+                      </div>
+
+
+                  </div>
+                  <button routerLink="/register" class="btn btn-primary mx-2">Register</button>
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div> -->
+<div class="container register">
+  <div class="row">
+      <div class="col-md-3 register-left">
+          <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHOp5qlJkMdDw/company-logo_200_200/0/1625116703384?e=2159024400&v=beta&t=rOmr3JNxhnsqY9iMkyM_y1jUqwe0iJZjanyOF3f6CpY" alt=""/>
+          <h3>Welcome</h3>
+          <input type="submit" (click)="clickRegister();" name="" value="Register"/><br/>
+      </div>
+      <div class="col-md-9 register-right">
+
+          <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <h3 class="register-heading">User Log In</h3>
+                  <div class="container">
+                  <div class="row register-form">
+                      <div class="col-ml-6">
+
+                          <div class="form-group">
+                            <label >Email</label>
+                              <input type="email" [(ngModel)]="credentials.email" class="form-control" placeholder="Your Email *" value="" />
+                          </div>
+
+                          <div class="form-group">
+                            <label >Password</label>
+                            <input type="password" [(ngModel)]="credentials.password" class="form-control" placeholder="Password *" value="" />
+                        </div>
+
+                          <input type="submit" class="btnRegister" (click)="onSubmit()"  value="Login"/>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+
+</div>
+

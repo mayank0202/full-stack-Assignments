@@ -1,0 +1,65 @@
+<div class="container register">
+  <div class="row">
+      <div class="col-md-3 register-left">
+          <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHOp5qlJkMdDw/company-logo_200_200/0/1625116703384?e=2159024400&v=beta&t=rOmr3JNxhnsqY9iMkyM_y1jUqwe0iJZjanyOF3f6CpY" alt=""/>
+          <h3>Welcome</h3>
+          <input type="submit" (click)="clickLogin();" name="" value="Login"/><br/>
+      </div>
+      <div class="col-md-9 register-right">
+
+          <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <h3 class="register-heading">User Registration</h3>
+                  <div class="container">
+                  <div class="row register-form">
+                      <div class="col-ml-6">
+                        <div class="form-group">
+                          <input type="number" [(ngModel)]="data.id" class="form-control" placeholder="Id *" value="" />
+                      </div>
+
+                          <div class="form-group">
+                              <input type="text" [(ngModel)]="data.firstname" class="form-control" placeholder="First Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                            <input type="text" [(ngModel)]="data.middlename" class="form-control" placeholder="Middle Name *" value="" />
+                        </div>
+                          <div class="form-group">
+                              <input type="text" [(ngModel)]="data.lastname" class="form-control" placeholder="Last Name *" value="" />
+                          </div>
+                          <div class="form-group">
+                            <input type="text" [(ngModel)]="data.phonenumber" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                        </div>
+
+                      <div class="form-group">
+                        <input type="text" [(ngModel)]="data.address" class="form-control" placeholder="Address *" value="" />
+                    </div>
+
+
+
+
+                      <div class="col-ml-6">
+                        <div class="form-group">
+                          <input type="text" [(ngModel)]="data.username" class="form-control" placeholder="Username *" value="" />
+                      </div>
+                          <div class="form-group">
+                              <input type="email" [(ngModel)]="data.email" class="form-control" placeholder="Your Email *" value="" />
+                          </div>
+                          <div class="form-group">
+                            <input type="password" [(ngModel)]="data.password" class="form-control" placeholder="Password *" value="" />
+                        </div>
+
+                         <p class="py-4" *ngIf="error" style="color: red;">Fill All Fields!!</p>
+                         <p class="py-4" *ngIf="created" style="color: blue;">User Created</p>
+
+
+                          <input type="submit" (click)="register();" class="btnRegister"  value="Register"/>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+
+</div>

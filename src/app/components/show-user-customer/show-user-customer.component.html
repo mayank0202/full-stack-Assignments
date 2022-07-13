@@ -1,0 +1,37 @@
+<nav class="navbar navbar-light bg-custom-1">
+  <div class="container-fluid">
+      <h1 style="color: white;">Show User Associated With Customer Table</h1>
+
+  </div>
+</nav>
+<div>
+  <button (click)="showCustomer();" type="button"  class="btn btn-success ">Back To Customers</button>
+
+</div>
+
+<table class="table table-bordered border-dark mt-3" id="container">
+  <thead>
+      <tr>
+
+          <th scope="col" style="color:white; font-size: large;" *ngFor="let row of userData[0] | keyvalue:order">{{row.key}}</th>
+
+
+      </tr>
+  </thead>
+
+  <div *ngIf="isdata" class="bg-custom-1">
+
+    <h1 style="color: red; text-align: center;">No User Data Available Associated With Customer</h1>
+
+  </div>
+
+  <tbody>
+      <tr style="color:whitesmoke;" *ngFor="let row of userData">
+
+          <td *ngFor="let data of row | keyvalue:order">
+              {{data.value}}
+          </td>
+      </tr>
+
+  </tbody>
+</table>
